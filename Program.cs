@@ -23,7 +23,7 @@ void Task19 (string arg)
 }
 Task19(n);*/
 
-void Task21()
+/*void Task21()
 {
     Console.WriteLine("Задача 21: Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.");
     Console.WriteLine("Введите первую координату по оси Х: ");
@@ -42,4 +42,26 @@ void Task21()
     Console.WriteLine(result);
     
 }
-Task21 ();
+Task21 ();*/
+
+void Task23()
+{
+    Console.WriteLine("Задача 23: Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.");
+    Console.WriteLine("Введите целое положительное число: ");
+    int num = Convert.ToInt32 (Console.ReadLine ());
+    double count = 1;
+    if (num > 0)
+    {
+        while (count <= num)
+        {
+            double result = Math.Pow(count, 3);
+            Console.Write(result + " ");
+            count ++;
+        }
+    }
+    else 
+    {
+       Console.WriteLine("Вы ввели отрицательное число: "); 
+    }
+}
+Task23();
